@@ -22,7 +22,6 @@ on:
 
 jobs:
   draw:
-    uses: stijnveenman/keymap-drawer/.github/workflows/draw-zmk.yml@feature/west-init
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
