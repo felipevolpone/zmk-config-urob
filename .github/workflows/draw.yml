@@ -7,18 +7,13 @@ on:
   #       default: 'artifact'
   #       required: false
   #       type: string
-  # workflow_dispatch:
+  workflow_dispatch:
   #   inputs:
   #     destination:
   #       description: 'Add the output files to a commit, as artifacts or both, values: `commit`, `artifact`, `both`'
   #       default: 'artifact'
   #       required: false
   #       type: string
-  push:
-    paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
-      - "keymap_drawer.config.yaml"
 
 jobs:
   draw:
