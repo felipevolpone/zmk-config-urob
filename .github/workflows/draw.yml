@@ -1,19 +1,6 @@
 name: Draw ZMK keymaps
 on:
-  # workflow_call:
-  #   inputs:
-  #     destination:
-  #       description: 'Add the output files to a commit, as artifacts or both, values: `commit`, `artifact`, `both`'
-  #       default: 'artifact'
-  #       required: false
-  #       type: string
   workflow_dispatch:
-  #   inputs:
-  #     destination:
-  #       description: 'Add the output files to a commit, as artifacts or both, values: `commit`, `artifact`, `both`'
-  #       default: 'artifact'
-  #       required: false
-  #       type: string
 
 jobs:
   draw:
