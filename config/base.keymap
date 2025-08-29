@@ -208,17 +208,17 @@ ZMK_BASE_LAYER(Base,
 )
 
 ZMK_BASE_LAYER(Nav,
-    &kp LA(F4)    ___           &kp LG(LEFT_BRACE)   &kp LG(RIGHT_BRACE)  ___         ,   &kp PG_UP     NAV_BSPC      NAV_UP        NAV_DEL       ___         ,
-    &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___         ,   &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_RIGHT     &kp RET     ,
-    ___           ___           ___           ___           ___         ,   &kp INS       &kp TAB       ___           ___           ___         ,
-                                ___           ___           ___         ,  ___            ___           CANCEL
+    &kp ___       ___           &kp LG(LEFT_BRACE)   &kp LG(RIGHT_BRACE)  ___         ,   ___     NAV_BSPC      NAV_DEL        ___       ___         ,
+    &sk LGUI      &sk LALT      &kp TAB     &kp LS(TAB)     ___         ,                 &kp NAV_LEFT     NAV_DOWN      NAV_UP      NAV_RIGHT     &kp RET     ,
+    ___           ___           ___           ___           ___         ,                 ___       ___       ___           ___           ___         ,
+                                ___           ___           ___         ,                 ___            ___           CANCEL
 )
 
 ZMK_BASE_LAYER(Fn,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp F12       &kp F7        &kp F8        &kp F9        ___         ,   ___           &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI F11 &hml LALT F4  &hml LSHFT F5 &hml LCTRL F6 ___         ,   ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___         ,
+    &hml LGUI F11 &hml LALT F4  ___             ___          ___        ,   ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp F10       &kp F1        &kp F2        &kp F3        ___         ,   PIN_APP       PIN_WIN       DSK_MGR       ___           ___         ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
