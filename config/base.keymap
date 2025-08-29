@@ -204,12 +204,11 @@ ZMK_BASE_LAYER(Base,
     &kp Q         &kp W         &kp E         &kp R         &kp T       ,   &kp Y         &kp U         &kp I         &kp O         &kp P     ,
     &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F  &kp G       ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L   &hmr LGUI SEMICOLON ,
     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &comma_morph  &dot_morph    &qexcl      ,
-                                &kp ESCAPE    &lt_spc NAV 0 &lt FN RET  ,   &kp BACKSPACE   SMART_NUM    MAGIC_SHIFT
-)
+                                 &kp ESCAPE    &lt_spc NAV 0 &lt FN RET  ,   &kp BACKSPACE   &SMART_NUM    MAGIC_SHIFT)
 
 ZMK_BASE_LAYER(Nav,
     &kp ___       ___           &kp LG(LEFT_BRACE)   &kp LG(RIGHT_BRACE)  ___         ,   ___     NAV_BSPC      NAV_DEL        ___       ___         ,
-    &sk LGUI      &sk LALT      &kp TAB     &kp LS(TAB)     ___         ,                 &kp NAV_LEFT     NAV_DOWN      NAV_UP      NAV_RIGHT     &kp RET     ,
+    &sk LGUI      &sk LALT      &kp TAB     &kp LS(TAB)     ___         ,                 NAV_LEFT     NAV_DOWN      NAV_UP      NAV_RIGHT     &kp RET     ,
     ___           ___           ___           ___           ___         ,                 ___       ___       ___           ___           ___         ,
                                 ___           ___           ___         ,                 ___            ___           CANCEL
 )
@@ -218,7 +217,7 @@ ZMK_BASE_LAYER(Fn,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp F12       &kp F7        &kp F8        &kp F9        ___         ,   ___           &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI F11 &hml LALT F4  ___             ___          ___        ,   ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___         ,
+    &hml LGUI F11 &hml LALT F4  &hml LSHFT F5   &hml LCTRL F6 ___        ,   ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp F10       &kp F1        &kp F2        &kp F3        ___         ,   PIN_APP       PIN_WIN       DSK_MGR       ___           ___         ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
