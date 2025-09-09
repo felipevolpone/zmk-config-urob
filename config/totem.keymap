@@ -6,7 +6,7 @@
         name,                                                                  \
                    LT RT                                                       \
                    LM RM                                                       \
-        &kp LCTRL  LB RB &kp SQT                                               \
+                   LB RB                                                       \
                    LH RH                                                       \
     )
 
