@@ -205,7 +205,7 @@ ZMK_BASE_LAYER(Base,
     &kp Q         &kp W         &kp E         &kp R         &kp T       ,   &kp Y         &kp U         &kp I         &kp O         &kp P     ,
     &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F  &kp G       ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L   &hmr LGUI SEMICOLON ,
     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &comma_morph  &dot_morph    &qexcl      ,
-                                &kp ESCAPE   &lt_spc NAV 0 &lt FN ESCAPE,   &kp ENTER     SMART_NUM    MAGIC_SHIFT
+                                &kp ESCAPE   &lt_spc NAV 0 &lt FN ESCAPE,   &kp ENTER     SMART_NUM     MAGIC_SHIFT
 )
 
 ZMK_BASE_LAYER(Nav,
@@ -228,15 +228,10 @@ ZMK_BASE_LAYER(Fn,
 )
 
 ZMK_BASE_LAYER(Num,
-//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___           &kp N7        &kp N8        &kp N9        ___         ,   &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)   ___         ,
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI N0  &hml LALT N4  &hml LSHFT N5 &hml LCTRL N6 ___         ,   ___           &kp TAB       &kp LS(TAB)   ___           ___         ,
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           &kp N1        &kp N2        &kp N3        ___         ,   ___           ___           ___           ___           ___         ,
-//╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+    ___           &kp N7        &kp N8        &kp N9        ___         ,   &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)        &kp LG(RIGHT_BRACE)   ___         ,
+    &hml LGUI N0  &hml LALT N4  &hml LSHFT N5 &hml LCTRL N6 ___         ,   ___                   &kp TAB                &kp LS(TAB)               ___                   ___         ,
+    ___           &kp N1        &kp N2        &kp N3        ___         ,   ___                    ___                   ___                       ___                   ___         ,
                                               ___           ___         ,   ___           ___
-//                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
 ZMK_BASE_LAYER(Sys,
