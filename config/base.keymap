@@ -200,18 +200,19 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 //  &kp Q         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT     ,
 //  &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O ,
 //  &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &qexcl      ,
+
 ZMK_BASE_LAYER(Base,
     &kp Q         &kp W         &kp E         &kp R         &kp T       ,   &kp Y         &kp U         &kp I         &kp O         &kp P     ,
     &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F  &kp G       ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L   &hmr LGUI SEMICOLON ,
     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &comma_morph  &dot_morph    &qexcl      ,
-                                 &kp ESCAPE   &lt_spc NAV 0 &lt FN RET  ,   &kp BACKSPACE SMART_NUM    MAGIC_SHIFT
+                                &kp ESCAPE   &lt_spc NAV 0 &lt FN ESCAPE,   &kp ENTER     SMART_NUM    MAGIC_SHIFT
 )
 
 ZMK_BASE_LAYER(Nav,
-    &kp ___       ___           &kp LG(LEFT_BRACE)   &kp LG(RIGHT_BRACE)  ___         ,   ___     NAV_BSPC      NAV_DEL        ___       ___         ,
-    &sk LGUI      &sk LALT      &kp TAB     &kp LS(TAB)     ___         ,                 NAV_LEFT     NAV_DOWN      NAV_UP      NAV_RIGHT     &kp RET     ,
-    ___           ___           ___           ___           ___         ,                 ___       ___       ___           ___           ___         ,
-                                ___           ___           ___         ,                 ___            ___           CANCEL
+       &kp GRAVE      &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN     ,  &kp ASTERISK  &kp DOLLAR      &kp PERCENT   &kp SQT    &none
+       &kp BACKSLASH  &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION ,  &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp SLASH
+&none  &kp PIPE       &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH        ,  &kp COLON     &kp EQUAL       &none         &none      &none      &none
+                                 &trans                &trans                 &trans          ,  &trans        &kp BACKSPACE   &none
 )
 
 ZMK_BASE_LAYER(Fn,
