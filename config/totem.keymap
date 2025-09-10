@@ -1,4 +1,8 @@
 // based on urob's config
+#define MAGIC_SHIFT &magic_shift LSHFT 0
+ZMK_HOLD_TAP(magic_shift, bindings = <&kp>, <&magic_shift_tap>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
 
 #define CONFIG_WIRELESS
 
@@ -6,7 +10,7 @@
 #define X_RB    &kp APOS
 
 #define X_LH    &kp ESCAPE
-#define X_RH    &kp ENTER
+#define X_RH    MAGIC_SHIFT
 
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
     ZMK_LAYER(                                                                 \
@@ -19,3 +23,4 @@
 
 #include "zmk-helpers/key-labels/totem.h"
 #include "base.keymap"
+
