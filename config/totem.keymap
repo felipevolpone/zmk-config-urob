@@ -8,7 +8,7 @@
 #define X_LB    &kp LCTRL
 #define X_RB    &kp APOS
 
-#define X_LH    &kp ESCAPE
+#define X_LH    &kp LG(LA(LS(S)))
 #define X_RH    SMART_NUM
 
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
