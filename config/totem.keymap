@@ -2,13 +2,14 @@
 
 // Tap: num-word | double-tap: sticky num-layer | Hold: num-layer.
 #define SMART_NUM &smart_num NUM 0
+#define MAGIC_SHIFT &magic_shift LSHFT 0
 
 #define CONFIG_WIRELESS
 
 #define X_LB    &kp LCTRL
 #define X_RB    &kp APOS
 
-#define X_LH    &kp LG(LA(LS(S)))
+#define X_LH    MAGIC_SHIFT
 #define X_RH    SMART_NUM
 
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
