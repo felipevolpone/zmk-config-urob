@@ -13,7 +13,7 @@
         name,                                                                  \
                    LT RT                                                       \
                    LM RM                                                       \
-              X_LH LB RB X_RB                                                  \
+              X_LB LB RB X_RB                                                  \
               X_LH LH RH X_RH                                                  \
     )
 
