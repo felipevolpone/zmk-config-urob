@@ -1,13 +1,20 @@
 // based on urob's config
 
 #define CONFIG_WIRELESS
+
+#define X_LB    &kp LCTRL
+#define X_RB    &kp APOS
+
+#define X_LH    &kp ESCAPE
+#define X_RH    &kp ENTER
+
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
     ZMK_LAYER(                                                                 \
         name,                                                                  \
                    LT RT                                                       \
                    LM RM                                                       \
-                   LB RB                                                       \
-                   LH RH                                                       \
+              X_LH LB RB X_RB                                                  \
+              X_LH LH RH X_RH                                                  \
     )
 
 #include "zmk-helpers/key-labels/totem.h"
