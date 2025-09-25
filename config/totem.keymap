@@ -7,7 +7,7 @@
 #define CONFIG_WIRELESS
 
 #define X_LB    &kp LCTRL
-#define X_RB    &kp APOS
+#define X_RB    &kp RGUI
 
 #define X_LH    MAGIC_SHIFT
 #define X_RH    SMART_NUM
