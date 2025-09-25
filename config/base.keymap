@@ -3,6 +3,8 @@
 #include <behaviors/unicode.dtsi> // Requires zmk-unicode module.
 #include <zmk-helpers/helper.h> // Requires zmk-helpers module.
 #include <dt-bindings/zmk/keys.h>
+#include "zmk-helpers/key-labels/totem.h"
+
 #ifdef CONFIG_WIRELESS
   #include <dt-bindings/zmk/bt.h>
   #include <dt-bindings/zmk/outputs.h>
@@ -171,7 +173,7 @@ ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
 //  &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O ,
 //  &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &qexcl      ,
 
-// &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F  &kp G        ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &kp L   &hmr LGUI SEMICOLON ,
+// &hml LGUI A   &hml LALT S   &hml LCTRL F  &kp G        ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &kp L   &hmr LGUI SEMICOLON ,
 
 ZMK_BASE_LAYER(Base,
     &kp Q         &kp W         &kp E         &kp R         &kp T        ,   &kp Y         &kp U         &kp I         &kp O         &kp P     ,
