@@ -67,6 +67,7 @@ MAKE_HRM_SFT(hmr_sft, &kp, &kp, KEYS_L THUMBS)
 MAKE_HRM_SFT(hml_sft, &kp, &kp, KEYS_L THUMBS)
 
 // Hack: Make HRM combos tap-only (cf, ZMK issue #544).
+
 #define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
@@ -192,10 +193,10 @@ ZMK_BASE_LAYER(Nav,
 )
 
 ZMK_BASE_LAYER(Fn,
-       &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE) ,  &caps_word  &kp LALT(LEFT) &kp LALT(RIGHT) &kp LG(LS(K))  &none,
+       &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE) ,  &caps_word  &kp LALT(LEFT) &kp LALT(RIGHT) &none          &none,
        &none  &kp C_VOLUME_DOWN     &kp K_MUTE             &kp C_VOLUME_UP     &none               ,  &sk RGUI    &kp TAB        &kp LS(TAB)     &none          &none,
        &none  &kp C_PREV            &kp C_PLAY_PAUSE       &kp C_NEXT          &none               ,  &none       &kp LG(LS(N4)) &none           &none          &none,
-                                                           &none               &none               ,  &none       &none
+                                                           &none               &none               ,  &none       &trans
 )
 
 ZMK_BASE_LAYER(Num,
