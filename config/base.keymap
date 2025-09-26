@@ -205,7 +205,8 @@ ZMK_BASE_LAYER(Num,
 
 ZMK_BASE_LAYER(Mouse,
     ___           ___           ___           ___           ___         ,   ___        ___    U_MS_U   ___    ___     ,
-    ___           ___           ___           ___           &mkp LCLK   ,   ___        U_MS_L U_MS_D   U_MS_R ___     ,
+    ___           ___           ___           ___           ___         ,   &mkp LCLK  U_MS_L U_MS_D   U_MS_R ___     ,
     ___           ___           ___           ___           ___         ,   ___        ___    ___      ___    ___     ,
                                               ___           &tog DEF    ,   ___        ___
 )
+
