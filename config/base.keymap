@@ -178,9 +178,9 @@ ZMK_BASE_LAYER(Base,
 
 ZMK_BASE_LAYER(Nav,
        &kp GRAVE      &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION ,  &kp ASTERISK  &kp DOLLAR      &kp PERCENT   &kp SQT            &kp LS(SQT),
-       &none          &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN     ,  &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT          &kp SLASH,
+       &kp TILDE      &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN     ,  &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT          &kp SLASH,
        &none          &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH        ,  &kp COLON     &kp EQUAL       &kp AMPS      &kp BACKSLASH      &kp CARET,
-                                                       &trans                 &trans          ,  &kp BACKSPACE   &kp TILDE
+                                                       &trans                 &trans          ,  &kp TILDE     &kp LA(BACKSPACE)
 )
 
 ZMK_BASE_LAYER(Fn,
@@ -192,7 +192,7 @@ ZMK_BASE_LAYER(Fn,
 
 ZMK_BASE_LAYER(Num,
     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      ,   &kp N6        &kp N7        &kp N8        &kp N9      &kp N0,
-    ___           ___          ___            ___           &kp N0      ,   ___ ___ ___ ___ ___,
+    ___           ___          ___            ___           &kp N0      ,   &kp ASTERISK &kp PLUS &kp MINUS &kp SLASH ___,
     ___           ___          ___            ___           ___         ,   ___ ___ ___ ___ ___,
                                               ___           ___         ,   ___ ___
 )
