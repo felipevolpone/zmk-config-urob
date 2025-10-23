@@ -185,7 +185,7 @@ ZMK_BASE_LAYER(Nav,
 
 ZMK_BASE_LAYER(Fn,
     &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)    ,    &caps_word  &kp LA(LEFT)   &kp LA(RIGHT)   &none          &none,
-    &none  &kp C_VOLUME_DOWN     &kp K_MUTE             &kp C_VOLUME_UP     &kp LG(LEFT)           ,    &sk LALT    &kp TAB        &kp LS(TAB)     &none          &none,
+    &none  &kp C_VOLUME_DOWN     &kp K_MUTE             &kp C_VOLUME_UP     &kp LG(LEFT)           ,    &kp N0      &kp TAB        &kp LS(TAB)     &none          &none,
     &none  &kp C_PREV            &kp C_PLAY_PAUSE       &kp C_NEXT          &kp LG(RIGHT)          ,    &none       &kp LG(LS(N4)) &none           &none          &none,
                                                         &none               &kp N0                 ,    &none       &trans
 )
