@@ -23,8 +23,6 @@
 #define XXX &none
 #define ___ &trans
 
-/* Global defaults */
-
 #define QUICK_TAP_MS 140
 
 &sk {
@@ -152,10 +150,7 @@ ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
 
-//  &kp Q         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT     ,
-//  &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O ,
-//  &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &qexcl      ,
-
+// &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O ,
 // &hml LGUI A   &hml LALT S   &hml LCTRL F  &kp G        ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &kp L   &hmr LGUI SEMICOLON ,
 
 ZMK_BASE_LAYER(Base,
@@ -173,10 +168,10 @@ ZMK_BASE_LAYER(Nav,
 )
 
 ZMK_BASE_LAYER(Fn,
-    &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)    ,    &caps_word  &kp LA(LEFT)   &kp LA(RIGHT)   &none          &none,
-    &none  &kp C_VOLUME_DOWN     &kp K_MUTE             &kp C_VOLUME_UP     &kp LG(LEFT)           ,    &kp N0      &kp TAB        &kp LS(TAB)     &none          &none,
+    &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)    ,    &none       &kp LA(LEFT)   &kp LA(RIGHT)   &none          &none,
+    &none  &kp C_VOLUME_DOWN     &kp K_MUTE             &kp C_VOLUME_UP     &kp LG(LEFT)           ,    &caps_word  &kp TAB        &kp LS(TAB)     &none          &none,
     &none  &none                 &kp C_PLAY_PAUSE       &none               &kp LG(RIGHT)          ,    &none       &kp LG(LS(N4)) &none           &none          &none,
-                                                        &none               &kp N0                 ,    &none       &trans
+                                                        &kp N0              &none                  ,    &none       &trans
 )
 
 ZMK_BASE_LAYER(Num,
