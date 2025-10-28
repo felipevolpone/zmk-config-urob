@@ -4,10 +4,10 @@
 #define CONFIG_WIRELESS
 
 #define X_LB    &kp LCTRL
-#define X_RH    &kp RGUI
+#define X_RB    &kp RGUI
 
 #define X_LH    SMART_NUM
-#define X_RB    &sk LSHFT
+#define X_RH    &sk LSHFT
 
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
     ZMK_LAYER(                                                                 \
