@@ -134,13 +134,6 @@ ZMK_TRI_STATE(
   ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
                 bindings = <BINDING1>, <BINDING2>;)
 
-// Tap: space | Shift + tap: dot -> space -> sticky shift | Hold: nav layer.
-ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
-ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
-          tap-ms = <5>;)
-
 #define CANCEL    &kp K_CANCEL            // Cancel caps-word & auto-layers.
 
 /* Keymap */
@@ -157,7 +150,7 @@ ZMK_BASE_LAYER(Base,
     &kp Q         &kp W         &kp E             &kp R         &kp T        ,   &kp Y         &kp U         &kp I             &kp O         &kp P     ,
     &hml LGUI A   &kp S         &kp D             &hml LSHFT F  &kp G        ,   &kp H         &hmr LSHFT J  &kp  K            &kp L         &hmr LGUI SEMICOLON ,
     &kp Z         &kp X         &kp C             &kp V         &kp B        ,   &kp N         &kp M         &kp COMMA         &kp DOT       &kp QMARK      ,
-                                                  &lt_spc NAV 0 &kp ESCAPE   ,   &kp ENTER     &lt FN BACKSPACE
+                                                  &lt NAV 0 &kp ESCAPE   ,   &kp ENTER     &lt FN BACKSPACE
 )
 
 ZMK_BASE_LAYER(Nav,
