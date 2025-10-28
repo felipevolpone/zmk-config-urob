@@ -61,15 +61,12 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-/* Combos, leader key sequences, mouse emulation */
-
 // Tmux macros
 ZMK_MACRO(tmux_next_window, bindings = <&kp LC(A) &kp N>; wait-ms = <0>; tap-ms = <5>;)
 ZMK_MACRO(tmux_previous_window, bindings = <&kp LC(A) &kp H>; wait-ms = <0>; tap-ms = <5>;)
 ZMK_MACRO(tmux_new_window, bindings = <&kp LC(A) &kp C>; wait-ms = <0>; tap-ms = <5>;)
 
 #include "combos.dtsi" // Must be sourced after HRM-combo hack.
-#include "leader.dtsi"
 #include "mouse.dtsi"
 
 /* Nav cluster */
@@ -157,7 +154,7 @@ ZMK_BASE_LAYER(Nav,
        &kp GRAVE      &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION ,  &kp ASTERISK  &kp DOLLAR      &kp PERCENT   &kp SQT            &kp LS(SQT),
        &kp PIPE       &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN     ,  &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT          &kp TILDE,
        &none          &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH        ,  &kp COLON     &kp EQUAL       &kp AMPS      &kp BACKSLASH      &kp CARET,
-                                                       &trans                 &trans          ,  &kp BACKSPACE &kp LA(BACKSPACE)
+                                                       &trans                 &trans          ,  &kp LA(BACKSPACE &kp LA(BACKSPACE)
 )
 
 ZMK_BASE_LAYER(Fn,
