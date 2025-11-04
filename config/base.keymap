@@ -147,7 +147,7 @@ ZMK_BASE_LAYER(Base,
     &kp Q         &kp W         &kp E             &kp R         &kp T        ,   &kp Y         &kp U         &kp I             &kp O         &kp P     ,
     &hml LGUI A   &kp S         &hml LSHFT D      &kp F         &kp G        ,   &kp H         &kp J         &hml LSHFT K      &kp L         &hmr LGUI SEMICOLON ,
     &kp Z         &kp X         &kp C             &kp V         &kp B        ,   &kp N         &kp M         &kp COMMA         &kp DOT       &kp QMARK      ,
-                                                  &lt NAV SPACE &kp ESCAPE   ,   &kp ENTER     &lt FN BACKSPACE
+                                                  &lt NAV SPACE &none        ,   &kp ENTER     &lt FN BACKSPACE
 )
 
 ZMK_BASE_LAYER(Nav,
